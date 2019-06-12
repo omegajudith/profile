@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Toyota Form Assignment</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+    <!--This is an html form and am using divs mainly to create the toyota form-->
+
+    <form  id="form" method="POST" action="#" class="form" >
+    <div class="container">
+            <h1>Welome To Toyota App,Where Making Your Orders Is Made Essy</h1>
+            <button type="button" id ="btn2" class="btn btn-secondary">View Database results</button>
+            <br>
+            <br>
+        <div class="center">
+            <div class="left">
+                <div class="customer_info">
+                    <fieldset>
+                        <legend>Customer Information</legend>
+                        <div id="one">
+                            <div class="customerId">
+                                <label>
+                                    Customer ID:
+                                </label>
+                            </div>
+                            <div class="label">
+                                <input type="text" name="customer" id="customer" placeholder="123-45-6789">
+                                <div class="customerSpan">
+                                    <span id="customer_span"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="two">
+                            <div class="name">
+                                <label>
+                                    Name
+                                </label>
+                            </div>
+                            <div class="label">
+                                <input type="text" name="name" id="name"placeholder="Will Smith">
+                                <div class="nameSpan">
+                                    <span id="name_span"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="three">
+                            <div class="state">
+                                <label>
+                                    State
+                                </label>
+                            </div>
+                            <div class="label">
+                                <input type="text" name="state" id="state" placeholder="EBB">
+                            </div>
+                            <div class="retail_customer">
+                                <input type="checkbox" name="checkbox" id="retail">Retail Customer
+                            </div>
+                        </div>
+                        <div class="stateSpan">
+                            <span id="state_span"></span>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="part_order">
+                    <fieldset>
+                        <legend>Part Ordered</legend>
+                        <div class="one">
+                            <div class="part_number">
+                                <label>
+                                    Part Number:
+                                </label>
+                            </div>
+                            <div class="label">
+                                <input type="text" name="part" id="part"  placeholder="20367">
+                                <div class="numberSpan">
+                                    <span id="number_span"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="two">
+                            <div class="description">
+                                <label>
+                                    Description
+                                </label>
+                            </div>
+                            <div class="label">
+                                <input type="text" name="desc" id="desc" placeholder="Indivators">
+                                <div class="descriptionSpan">
+                                    <span id="description_span"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="three">
+                            <div class="price_part">
+                                <label>
+                                    Price Per Part
+                                </label>
+                            </div>
+                            <div class="label">
+                                <input type="text" name="price" id="price" placeholder="$10">
+                            </div>
+                            <div class="quantity">
+                                <label>Quantity:</label>
+                            </div>
+                            <div class="quantity">
+                                <input type="text" name="quantity" id="quantity"  placeholder="7">
+                            </div>
+                        </div>
+                        <div class="generalSpan">
+                            <div class="priceSpan">
+                                <span id="price_span"></span>
+                            </div>
+                            <div class="quantitySpan">
+                                <span id="qtn_span"></span>
+                            </div>
+                        </div>
+                        <div class="oversie_container">
+                            <input type="checkbox" id ="oversize" name="nameCheck"> Oversize Container?
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="lower">
+                    <div class="computer">
+                        <input type="submit" value="Compute">
+                    </div>
+                    <div class="new_order">
+                        <input type="button" value="New Order">
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="shipping">
+                    <fieldset>
+                        <legend>Shipping</legend>
+                        <div class="one">
+                            <input type="radio" name="choice" value ="UPS" id="ups" class="choice" checked>UPS
+                            <input type="radio" name="choice" id="fedExGround" value="Fed Ex Ground" class="fedExGround">Fed Ex Ground
+                        </div>
+                        <div class="two">
+                            <input type="radio" name="choice" value="US Postal Air" id="postalAir" class= "choice">US Postal Air
+                            <input type="radio" name="choice" value="Fed Ex Air" id="fedExAir" class=" choice fedExAir">Fed Ex Air
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="output">
+                    <fieldset>
+                        <legend>Output</legend>
+                        <div class="cost">
+                            <div class="label">
+                                <label>
+                                    Cost:
+                                </label>
+                            </div>
+                            <div class="input_field">
+                                <input id="cost" type="text" name="cost">
+                            </div>
+                        </div>
+                        <div class="sales">
+                            <div class="label">
+                                <label>
+                                    Sales Tax:
+                                </label>
+                            </div>
+                            <div class="sales_field">
+                                <input id="sales" type="text" name="sales">
+                            </div>
+                        </div>
+                        <div class="Shipping">
+                            <div class="label">
+                                <label>
+                                    Shipping & Handling:
+                                </label>
+                            </div>
+                            <div class="shipping_field">
+                                <input type="text" name="shipping" id="shipping"> 
+                            </div>
+                        </div>
+                        <div class="total">
+                            <div class="label">
+                                <label>
+                                    Total:
+                                </label>
+                            </div>
+                            <div class="total_field">
+                                <input type="text" name="total" id="total">
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="exit">
+                    <input type="button" value="Exit">
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <p>Copyright @judith omega 2019-All Rights Reserved. Judith's tech Resources</p>
+    </form>
+    <script src="./client.js"></script>
+</body>
+</html>
